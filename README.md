@@ -25,5 +25,5 @@ cheatsheet/
       └── etc.md
 ```
 
-## Todo : 
+## 📝 Todo : 
 - [ ] Faire un premier commit pour init la structure du projet
