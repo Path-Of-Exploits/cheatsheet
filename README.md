@@ -53,10 +53,12 @@ cheatsheet/
   - [ ] LFI
   - [ ] Command Injection
 - [ ] Common Application
-- [ ] AD
-- [ ] Pivoting
+- [x] AD
+  - [x] Enumération
+  - [x] Exploitation
+  - [x] Post Exploitation
+- [x] Pivoting
   - [x] Ligolo
-  - [ ] Ssh
-  - [ ] Socat
-- [ ] Misc
-- [x] Finir le readme.md
+  - [x] Ssh
+  - [x] Socat
+  - [x] Chisel
