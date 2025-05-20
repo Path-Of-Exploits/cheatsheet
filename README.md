@@ -52,6 +52,7 @@ cheatsheet/
   - [ ] XXE
   - [ ] LFI
   - [ ] Command Injection
+- [ ] Common Application
 - [ ] AD
 - [ ] Pivoting
 - [ ] Misc
