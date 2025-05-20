@@ -5,9 +5,18 @@
 whois facebook.com
 ```
 
+### Firefox
+```
+- Wappalyzer
+- Foxyproxy
+- Dev tools
+```
+
 ### Fingerprint
 ```bash
 wafw00f inlanefreight.com
+whatweb $TARGET
+nuclei -u http://$TARGET
 ```
 
 ### Crawling
@@ -16,8 +25,12 @@ wafw00f inlanefreight.com
 /.git
 /robots.txt
 /.well-known
+# Tools
 python3 ReconSpider.py http://inlanefreight.com
 python3 finalrecon.py --headers --whois --url http://inlanefreight.com
+# Fuzzing Directory
+feroxbuster -w `fzf-wordlists` -u "http://$TARGET/"
+ffuf -c -w `fzf-wordlists` -u "http://$TARGET/FUZZ"
 ```
 
 ### DNS
