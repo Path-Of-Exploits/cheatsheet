@@ -73,6 +73,7 @@ Sharphound.exe -c All -d "$DOMAIN"
 ### Rpcclient
 ```bash
 rpcclient -U "" -N $TARGET
+rpcdump.py @172.16.5.5 | egrep 'MS-RPRN|MS-PAR'
 querydominfo
 enumdomusers
 ```
