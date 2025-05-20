@@ -44,7 +44,7 @@ cheatsheet/
 - [x] Post Exploit Linux
 - [x] Post Exploit Windows
 - [ ] Web
-  - [ ] Web Enumeration
+  - [x] Web Enumeration
   - [ ] SQLi
   - [ ] XSS
   - [ ] File Upload
@@ -56,4 +56,4 @@ cheatsheet/
 - [ ] AD
 - [ ] Pivoting
 - [ ] Misc
-- [ ] Finir le readme.md
+- [x] Finir le readme.md
