@@ -11,6 +11,14 @@ cheatsheet/
   │   └── windows.md
   ├── web/
   │   ├── enum-web-app.md
+  │   ├── sqli.md
+  │   ├── xss.md
+  │   ├── idor.md
+  │   ├── xxe.md
+  │   ├── command_injection.md
+  │   ├── file_upload.md
+  │   ├── file_inclusion.md
+  │   ├── enum-web-app.md
   ├── ad/
   │   ├── git.md
   │   └── vscode.md
