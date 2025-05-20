@@ -1,6 +1,6 @@
 ## Ligolo
 https://docs.ligolo.ng/
-
+Subnet calculator : http://www.aboutmyip.com/AboutMyXApp/SubnetCalculator.jsp
 ### Server side
 ```bash
 # Start ligolo server
