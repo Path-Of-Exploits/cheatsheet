@@ -23,4 +23,6 @@ cheatsheet/
 ```
 
 ## 📝 Todo : 
-- [ ] Faire un premier commit pour init la structure du projet
+- [x] Faire un premier commit pour init la structure du projet
+- [x] Post Exploit Linux
+- [x] Post Exploit Windows 
