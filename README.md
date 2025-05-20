@@ -10,7 +10,6 @@ cheatsheet/
   │   ├── linux.md
   │   └── windows.md
   ├── web/
-  │   ├── enum-web-app.md
   │   ├── sqli.md
   │   ├── xss.md
   │   ├── idor.md
@@ -18,9 +17,7 @@ cheatsheet/
   │   ├── command_injection.md
   │   ├── file_upload.md
   │   ├── file_inclusion.md
-  │   └── enum_web.md
-  ├── ad/
-  │   └── all.md
+  │   └── web_enumeration.md
   ├── common-application/
   │   ├── wordpress.md
   │   ├── joomla.md
@@ -36,6 +33,8 @@ cheatsheet/
   │   ├── forwarding-port.md
   |   ├── ligolo.md
   │   └── chisel.md
+  ├── ad/
+  │   └── all.md
   └── autres/
       └── etc.md
 ```
@@ -44,7 +43,8 @@ cheatsheet/
 - [x] Faire un premier commit pour init la structure du projet
 - [x] Post Exploit Linux
 - [x] Post Exploit Windows
-- [x] Web
+- [ ] Web
+  - [ ] Web Enumeration
   - [ ] SQLi
   - [ ] XSS
   - [ ] File Upload
