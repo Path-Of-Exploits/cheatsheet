@@ -3,7 +3,7 @@ https://docs.ligolo.ng/
 
 ### Server side
 ```bash
-# start ligolo server
+# Start ligolo server
 sudo ligolo-ng -selfcert
 # Create interface
 ligolo-ng » ifcreate --name "interface_name"
