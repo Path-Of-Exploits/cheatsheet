@@ -9,9 +9,6 @@ cheatsheet/
   ├── post-exploit/
   │   ├── linux.md
   │   └── windows.md
-  ├── privesc/
-  │   ├── linux.md
-  │   └── windows.md
   ├── web/
   │   ├── enum-web-app.md
   ├── ad/
@@ -26,4 +23,6 @@ cheatsheet/
 ```
 
 ## 📝 Todo : 
-- [ ] Faire un premier commit pour init la structure du projet
+- [x] Faire un premier commit pour init la structure du projet
+- [x] Post Exploit Linux
+- [x] Post Exploit Windows 
