@@ -55,5 +55,8 @@ cheatsheet/
 - [ ] Common Application
 - [ ] AD
 - [ ] Pivoting
+  - [x] Ligolo
+  - [ ] Ssh
+  - [ ] Socat
 - [ ] Misc
 - [x] Finir le readme.md
