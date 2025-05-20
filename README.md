@@ -28,7 +28,7 @@ cheatsheet/
   │   ├── prtg.md
   │   ├── osticket.md
   │   ├── gitlab.md
-  │   ├── coldfusion.md
+  │   └── coldfusion.md
   ├── pivoting/
   │   ├── forwarding-port.md
   |   ├── ligolo.md
