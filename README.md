@@ -9,9 +9,6 @@ cheatsheet/
   ├── post-exploit/
   │   ├── linux.md
   │   └── windows.md
-  ├── privesc/
-  │   ├── linux.md
-  │   └── windows.md
   ├── web/
   │   ├── enum-web-app.md
   ├── ad/
