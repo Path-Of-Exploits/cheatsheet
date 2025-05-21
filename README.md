@@ -46,12 +46,12 @@ cheatsheet/
   - [x] Web Enumeration
   - [x] SQLi
   - [x] XSS
-  - [ ] Command Injections
-  - [ ] File Upload
+  - [x] Command Injections
   - [ ] IDOR
   - [ ] XXE
   - [ ] LFI
-- [ ] Common Application
+  - [ ] File Upload
+- [x] Common Application
 - [x] AD
   - [x] Enumération
   - [x] Exploitation
