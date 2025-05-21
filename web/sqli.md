@@ -10,12 +10,15 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 - AND (&&)
 - OR (||)
 
-- - URL Encoded
+# URL Encoded
 - ' 	%27
 - " 	%22
 - # 	%23
 - ; 	%3B
 - ) 	%29
+- Space %20
+- Linefeed %0A
+- Tab %09
 ```
 
 ## Connect to mysql db
