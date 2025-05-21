@@ -40,18 +40,17 @@ cheatsheet/
 ```
 
 ## 📝 Todo : 
-- [x] Faire un premier commit pour init la structure du projet
 - [x] Post Exploit Linux
 - [x] Post Exploit Windows
 - [ ] Web
   - [x] Web Enumeration
   - [x] SQLi
   - [x] XSS
+  - [ ] Command Injections
   - [ ] File Upload
   - [ ] IDOR
   - [ ] XXE
   - [ ] LFI
-  - [ ] Command Injection
 - [ ] Common Application
 - [x] AD
   - [x] Enumération
