@@ -45,8 +45,8 @@ cheatsheet/
 - [x] Post Exploit Windows
 - [ ] Web
   - [x] Web Enumeration
-  - [ ] SQLi
-  - [ ] XSS
+  - [x] SQLi
+  - [x] XSS
   - [ ] File Upload
   - [ ] IDOR
   - [ ] XXE
