@@ -58,6 +58,9 @@ dig axfr @nsztm1.digi.ninja zonetransfer.me
 gobuster vhost -u http://<target_IP_address> -w <wordlist_file> --append-domain
 ffuf -fs <default_size> -c -w `fzf-wordlists` -H 'Host: FUZZ.machine.org' -u "http://$TARGET/"
 ffuf -ac -c -w `fzf-wordlists` -H 'Host: FUZZ.machine.org' -u "http://$TARGET/"
+# Export all result from ffuf output to file and add .domain.tld
+cat vhost_fuzzing.txt | awk '{print $1".inlanefreight.local"}'
+
 # Enum from certificates
 curl -s "https://crt.sh/?q=domain.com&output=json" | jq -r '.[] | select(.name_value | contains("dev")) | .name_value' | sort -u
 curl -I inlanefreight.com
