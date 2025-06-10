@@ -48,8 +48,8 @@ cheatsheet/
   - [x] XSS
   - [x] Command Injections
   - [x] IDOR
-  - [ ] XXE
-  - [ ] LFI
+  - [x] XXE
+  - [x] LFI
   - [ ] File Upload
   - [ ] Common Applications
 - [x] Common Application
