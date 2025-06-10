@@ -4,6 +4,19 @@ https://academy.hackthebox.com/module/23/section/252
 
 > Différence entre Local File Inclusion & Path Traversal : https://www.perplexity.ai/search/c-est-quoi-la-difference-entre-IcqEhcTNSQG4xydII.zABA
 
+Wordlists to use (Pwnbox Path) : 
+- /opt/useful/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
+- /usr/share/seclists/Discovery/Web-Content/default-web-root-directory-linux.txt
+- https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/LFI/LFI-Jhaddix.txt
+- https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Linux
+- https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Windows
+
+Automated tool :
+-  [LFISuite](https://github.com/D35m0nd142/LFISuite)
+-  [LFiFreak](https://github.com/OsandaMalith/LFiFreak)
+-  [Liffy](https://github.com/mzfr/liffy) 
+
+
 ## Basic LFI / Paf Traversal
 
 ```
