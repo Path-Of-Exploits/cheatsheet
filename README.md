@@ -47,10 +47,11 @@ cheatsheet/
   - [x] SQLi
   - [x] XSS
   - [x] Command Injections
-  - [ ] IDOR
-  - [ ] XXE
-  - [ ] LFI
+  - [x] IDOR
+  - [x] XXE
+  - [x] LFI
   - [ ] File Upload
+  - [ ] Common Applications
 - [x] Common Application
 - [x] AD
   - [x] Enumération
