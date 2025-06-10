@@ -51,6 +51,7 @@ cheatsheet/
   - [ ] XXE
   - [ ] LFI
   - [ ] File Upload
+  - [ ] Common Applications
 - [x] Common Application
 - [x] AD
   - [x] Enumération
