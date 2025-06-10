@@ -47,7 +47,7 @@ cheatsheet/
   - [x] SQLi
   - [x] XSS
   - [x] Command Injections
-  - [ ] IDOR
+  - [x] IDOR
   - [ ] XXE
   - [ ] LFI
   - [ ] File Upload
