@@ -1,7 +1,7 @@
 ## IPMI
 
 ```bash
-nmap -sU --script ipmi-version -p 623 ilo.inlanfreight.local
+nmap -sU --script ipmi-version -p 623 $TARGET
 
 msf6 auxiliary(scanner/ipmi/ipmi_version) > set rhosts $TARGET
 msf6 auxiliary(scanner/ipmi/ipmi_version) > run
