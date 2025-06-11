@@ -13,7 +13,7 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
   - [x] XXE
   - [x] LFI
   - [x] File Upload
-  - [ ] Web Mass assignment
+  - [ ] Web Mass Assignment
   - [ ] Common Applications
     - [x] Wordpress
     - [ ] Joomla
@@ -28,18 +28,19 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
     - [ ] Cold Fusion
     - [ ] Wordpress
 
-- [ ] Services Enumeration
-  - [ ] FTP
-  - [ ] SMB
-  - [ ] NFS
-  - [ ] DNS
-  - [ ] SMTP
-  - [ ] IMAP/POP3
-  - [ ] SNMP
-  - [ ] MySQL
-  - [ ] MSSQL
-  - [ ] Oracle TNS
-  - [ ] IPMI
+- [x] Services Enumeration
+  - [x] FTP
+  - [x] SMB
+  - [x] NFS
+  - [x] DNS
+  - [x] SMTP
+  - [x] IMAP/POP3
+  - [x] SNMP
+  - [x] MySQL
+  - [x] MSSQL
+  - [x] Oracle TNS
+  - [x] IPMI
+  - [x] LDAP
   
 - [ ] Thick Application
   - [ ] Need time to build notes
