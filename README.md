@@ -16,17 +16,18 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
   - [ ] Web Mass Assignment
   - [ ] Common Applications
     - [x] Wordpress
-    - [ ] Joomla
-    - [ ] Drupal
-    - [ ] Tomcat
-    - [ ] Jenkins
-    - [ ] Splunk
-    - [ ] PRTG
-    - [ ] osTicket
-    - [ ] GitLab
-    - [ ] Tomcat CGI
+    - [x] Joomla
+    - [x] Drupal
+    - [x] Tomcat
+    - [x] Jenkins
+    - [x] Splunk
+    - [x] PRTG
+    - [x] osTicket
+    - [x] GitLab
+    - [x] Tomcat CGI
     - [ ] Cold Fusion
-    - [ ] Wordpress
+    - [ ] IIS
+    - [x] Wordpress
 
 - [x] Services Enumeration
   - [x] FTP
