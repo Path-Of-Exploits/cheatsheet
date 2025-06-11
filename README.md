@@ -42,7 +42,7 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
   - [ ] IPMI
   
 - [ ] Thick Application
-  - [ ] 
+  - [ ] Need time to build notes
 
 - [x] AD
   - [x] Enumération
