@@ -4,7 +4,7 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
 
 ## 📂 Structure du projet
 
-- [ ] Web
+- [x] Web
   - [x] Web Enumeration
   - [x] SQLi
   - [x] XSS
