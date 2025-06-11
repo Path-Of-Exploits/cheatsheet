@@ -2,11 +2,11 @@
 
 ### IMAP
 ```bash
-nmap -p 143,993 --script imap-capabilities <target>
-hydra -L usernames.txt -P passwords.txt -s 143 -f <target> imap
+$ nmap -p 143,993 --script imap-capabilities $TARGET
+$ hydra -L usernames.txt -P passwords.txt -s 143 -f $TARGET imap
 
-telnet <server_ip> 143
-openssl s_client -connect <server_ip>:993
+$ telnet $TARGET 143
+$ openssl s_client -connect $TARGET:993
 
 a login username password
 a list "" "*"
@@ -18,11 +18,11 @@ a logout
 
 ### POP3
 ```bash
-nmap -p 110,995 --script pop3-capabilities <target>
-hydra -L usernames.txt -P passwords.txt -s 110 -f <target> pop3
+$ nmap -p 110,995 --script pop3-capabilities $TARGET
+$ hydra -L usernames.txt -P passwords.txt -s 110 -f $TARGET pop3
 
-telnet <server_ip> 110
-openssl s_client -connect <server_ip>:995
+$ telnet $TARGET 110
+$ openssl s_client -connect $TARGET:995
 
 USER username
 PASS password
