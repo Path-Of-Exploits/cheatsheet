@@ -13,8 +13,8 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
   - [x] XXE
   - [x] LFI
   - [x] File Upload
-  - [ ] Web Mass Assignment
-  - [ ] Common Applications
+  - [x] Web Mass Assignment
+  - [x] Common Applications
     - [x] Wordpress
     - [x] Joomla
     - [x] Drupal
@@ -25,8 +25,8 @@ Projet collaboratif pour créer et partager des cheatsheets basés sur les cours
     - [x] osTicket
     - [x] GitLab
     - [x] Tomcat CGI
-    - [ ] Cold Fusion
-    - [ ] IIS
+    - [x] Cold Fusion
+    - [x] IIS
     - [x] Wordpress
 
 - [x] Services Enumeration
