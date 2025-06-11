@@ -50,7 +50,7 @@ cheatsheet/
   - [x] IDOR
   - [x] XXE
   - [x] LFI
-  - [ ] File Upload
+  - [x] File Upload
   - [ ] Common Applications
 - [x] Common Application
 - [x] AD
